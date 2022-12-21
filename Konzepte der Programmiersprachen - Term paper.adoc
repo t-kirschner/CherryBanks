@@ -1,0 +1,30 @@
+= Object-oriented programming - An example in Kotlin and the comparison to Go
+
+
+== Introduction
+In the course of the term paper a code project was created to demonstrate the basic aspects of object-oriented programming. The project defines a banking system that manages bank customers and their bank accounts. The implementation was done in the programming language Kotlin which is well suited for object-oriented programming.
+
+In the following, the most important and fundamental aspects of object-oriented programming are shown and explained on the basis of the implemented banking system. Followed by a comparison with the programming language Go it is analyzed how the treated aspect would be implemented in Go. Finally, possible advantages and disadvantages are discussed.
+
+== Structure of object-oriented programming
+
+
+== Principles of object-oriented programming
+
+=== Abstraction
+==== Abstraction in Kotlin project
+==== Comparison to Go
+
+=== Inheritance
+==== Inheritance in Kotlin project
+==== Comparison to Go
+
+=== Encapsulation
+==== Encapsulation in Kotlin project
+==== Comparison to Go
+
+=== Polymorphism
+==== Polymorphism in Kotlin project
+==== Comparison to Go
+
+== Conclusion
