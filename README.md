@@ -1,2 +1,2 @@
 # CherryBanks
-Project for University Lecture. Represents simple bank account system in OOP.
+Project for university lecture. Represents simple bank account system in OOP.
