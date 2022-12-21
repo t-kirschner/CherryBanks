@@ -7,13 +7,84 @@ In the course of the term paper a code project was created to demonstrate the ba
 In the following, the most important and fundamental aspects of object-oriented programming are shown and explained on the basis of the implemented banking system. Followed by a comparison with the programming language Go it is analyzed how the treated aspect would be implemented in Go. Finally, possible advantages and disadvantages are discussed.
 
 == Structure of object-oriented programming
+In object-oriented programming (OOP), the structure of a program is based on the concept of "objects", which contain data and code that manipulates that data. OOP has four main elements: classes, objects, attributes, and methods.
 
+- Classes: A class is a blueprint or template for creating objects. It defines the attributes (data) and methods (code) that make up an object.
+
+- Objects: An object is an instance of a class. It contains the actual data and code for a particular instance of the class.
+
+- Attributes: Attributes are the data or state of an object. They are also known as instance variables or fields.
+
+- Methods: Methods are the code or behavior of an object. They define the actions that an object can perform and the way it manipulates its data.
+
+Referring to the bank system Classes are for example "Bank", "Customer" and "Account". Adding a customer to the bank creates an object of the Customer class.
+This customer is described by attributes, such as "customerId" or "accounts". Methods like "getId()" or "addAccount()" can describe certain actions of this object and can manipulate its data.
 
 == Principles of object-oriented programming
+Object-oriented programming (OOP) is a programming paradigm that is based on the concept of "objects", which can contain data and code that manipulates that data. OOP has several key aspects which are going to be explained by the given bank system example.
 
 === Abstraction
+Abstraction is a key aspect of OOP that involves exposing only the necessary information to the user, while hiding unnecessary details. In general an abstract class specifies what its subclasses must be able to do. However, it does not necessarily prescribe how the methods must be implemented concretely.
+
 ==== Abstraction in Kotlin project
+In the code project abstraction has been implemented as follows:
+----
+abstract class Account(var balance: Double) : Printable {
+    protected var accountId: Int = 0
+
+    init {
+        accountId = idCounter
+        idCounter++
+    }
+
+    companion object {
+        var idCounter = 1
+    }
+
+    abstract fun deposit(amount: Double)
+    abstract fun withdraw(amount: Double)
+
+    fun getId(): Int {
+        return this.accountId
+    }
+}
+----
+
+In Kotlin an abstract class is defined by the key word "abstract" in front of the "class" declaration. In this example, the "Account" class is an abstract class that defines the basic structure for an Account object. It has two abstract methods, "deposit" and "withdraw", which must be implemented by any subclass. The "CheckingAccount" and "SavingsAccount" classes are concrete subclasses of "Account" that implement the abstract methods to manipulate the balance of an account like shown in the following excerpts of the subclasses:
+
+----
+class CheckingAccount(balance: Double) : Account(balance) {
+
+    override fun deposit(amount: Double) {
+        balance += amount
+    }
+
+    override fun withdraw(amount: Double) {
+        balance -= amount
+    }
+}
+----
+
+----
+class SavingsAccount(balance: Double) : Account(balance) {
+
+    override fun deposit(amount: Double) {
+        balance += amount
+    }
+
+    override fun withdraw(amount: Double) {
+        if (amount > balance) {
+            throw IllegalArgumentException()
+        }
+        balance -= amount
+    }
+}
+----
+
+As shown an abstract class specifies what the subclasses must be able to do. However, it does not necessarily prescribe how the methods must be implemented concretely. With the key word "override" the compiler is informed that the concrete implementation of the method in the Subclass follows.
+
 ==== Comparison to Go
+In Go abstraction is solved as follows.
 
 === Inheritance
 ==== Inheritance in Kotlin project
