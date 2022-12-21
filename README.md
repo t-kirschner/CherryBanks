@@ -3,7 +3,7 @@ Project for university lecture. Represents simple bank account system in OOP.
 
 To run the Kotlin application on the Java Virtual Machine (JVM), you must first ensure that you have the required development tools and libraries installed. These include:
 
-- The Java Development Kit (JDK): this contains all the tools you need to compile and run Java code. You can download and install the JDK from Oracle's official website.
+- The Java Development Kit (JDK): This contains all the tools you need to compile and run Java code. You can download and install the JDK from Oracle's official website.
 
 - The Kotlin Compiler Plugin: This plugin adds the ability to compile Kotlin code to the JDK. You can install the plugin either from the command line or from your development environment.
 
