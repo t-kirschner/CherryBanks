@@ -178,6 +178,8 @@ s.Withdraw(20.0)    // Output: 30.0
 ----
 Using type embedding it is possible to achieve similar behaviors to inheritance in Go, but the way they are implemented is quite different from inheritance in other languages.
 
+<<<
+
 === 3.3 Encapsulation
 Encapsulation is a fundamental concept in OOP. It refers to the bundling of data with the methods that operate on that data or the bundling of related properties and behaviors into a single unit or object.
 Encapsulation allows a class to hide its internal implementation details from other classes, so that the internal workings of the class are not exposed to the outside world. This promotes modularity and makes it easier to maintain and modify the code, because the internal implementation can be changed without affecting the rest of the system.
@@ -277,6 +279,8 @@ func (s SavingsAccount) Print() string {
 }
 ----
 
+<<<
+
 Here, the "Printer" interface defines a "Print()" method, which the "Customer", "CheckingAccount" and "SavingsAccount" types implement. This allows to use a "Printer" variable to refer to either a "Customer", "CheckingAccount" or a "SavingsAccount" object, and call the "Print()" method on it. Using the interface could look like this:
 
 ----
@@ -303,6 +307,8 @@ This code creates a variable called "printer" of type "Printer", and then assign
 With the code project in Kotlin all important concepts of OOP could be demonstrated.
 Kotlin supports all principles of OOP while in Go sometimes a few detours have to be made to achieve similar behavior. Go supports encapsulation via an OOP style syntax. Polymorphism in Go only can be achieved by using interfaces. In Go there is no concept of abstract classes like in Kotlin. However, in Go also interfaces can be used to achieve similar behavior of abstraction in other languages. At least Go does not support inheritance, but it provides other mechanisms such as type embedding which makes reuse of code possible.
 Overall, Kotlin and Go are both Object-Oriented languages, but they have some differences in their approach to OOP. Both languages offer a powerful and flexible way to structure and organize code and which one to choose will depend on the needs and preferences.
+
+<<<
 
 [bibliography]
 == References
