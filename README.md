@@ -1,5 +1,10 @@
 # CherryBanks
-Project for university lecture. Represents simple bank account system in OOP.
+Project for university lecture. Represents simple bank account system in OOP:
+- adding and deleting customers to/from bank
+- choosing customers and adding/deleting different types of bank accounts
+- deposit and withdraw amounts to/from accounts
+- data is collected from console input
+- actions are displayed on console output
 
 To run the Kotlin application on the Java Virtual Machine (JVM), you must first ensure that you have the required development tools and libraries installed. These include:
 
@@ -15,6 +20,6 @@ Once you have installed the required tools, you can run the Kotlin application a
 
 - Run the "java -jar Main.jar" command to run the application. You should now see the Main Menu of "CherryBanks".
 
-If you are using a development environment such as IntelliJ IDEA or Eclipse, you can also run the Kotlin application directly from the development environment by executing the Run or Debug command.
+If you are using a development environment such as IntelliJ IDEA or Eclipse, you can also run the Kotlin application directly from the development environment by executing the Run command.
 
 Have fun banking!
