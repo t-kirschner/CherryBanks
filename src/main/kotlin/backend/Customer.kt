@@ -38,7 +38,7 @@ class Customer(private val firstName: String, private val lastName: String) : Pr
     }
 
     override fun print() {
-        println("Customer [ID: $customerId]:\n$firstName $lastName\n")      //hier ok? Oder gehört println in UI?
+        println("Customer [ID: $customerId]:\n$firstName $lastName\n")
         accounts.forEach { it.print() }
     }
 }

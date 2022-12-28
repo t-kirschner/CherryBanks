@@ -18,4 +18,9 @@ abstract class Account(var balance: Double) : Printable {
     fun getId(): Int {
         return this.accountId
     }
+
+    @JvmName("getBalance1")
+    fun getBalance(): Double {
+        return this.balance
+    }
 }

@@ -10,7 +10,7 @@ class UI {
                 showWrongInput()
                 return getSimpleMenuInput()
             } else {
-                try {                                   //try catch in UI in ordnung?
+                try {
                     inputInt = input.toInt()
                 } catch (e: NumberFormatException) {
                     showWrongInput()

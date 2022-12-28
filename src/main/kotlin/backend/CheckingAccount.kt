@@ -11,7 +11,7 @@ class CheckingAccount(balance: Double) : Account(balance) {
     }
 
     override fun print() {
-        println(this::class.simpleName + "[ID: $accountId]")       //hier ok? Oder gehört println in UI?
+        println(this::class.simpleName + "[ID: $accountId]")
         println("Balance: $balance\n")
     }
 
