@@ -10,7 +10,7 @@ class Customer(private val firstName: String, private val lastName: String) : Pr
     }
 
     companion object {
-        var idCounter: Int = 1
+        private var idCounter: Int = 1
 
         fun create(firstName: String, lastName: String): Customer {
             return Customer(firstName, lastName)

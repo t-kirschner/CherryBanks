@@ -1,6 +1,6 @@
 package backend
 
-abstract class Account(var balance: Double) : Printable {
+abstract class Account(protected var balance: Double) : Printable {
     protected var accountId: Int = 0
 
     init {
@@ -9,7 +9,7 @@ abstract class Account(var balance: Double) : Printable {
     }
 
     companion object {
-        var idCounter = 1
+        private var idCounter = 1
     }
 
     abstract fun deposit(amount: Double)
