@@ -20,7 +20,7 @@ If you want to compile the Kotlin code by yourself you need:
 
 Once you have installed the required tools, you can run the Kotlin application as follows:
 
-- Open a command line and navigate to the directory where the Kotlin code ("Main.kt" file, "backend", "controlling" and "frontend" folders) is located.
+- Open a command line and navigate to the directory where the Kotlin code ("Main.kt" file, "backend", "controlling" and "frontend" folders) is located (CherryBanks/src/main/kotlin).
 - Run the "kotlinc-jvm -include-runtime Main.kt backend controlling frontend -d Main.jar" command to compile the Kotlin file into a Java archive (.jar file). This command also creates all the required classes and resources to run the application.
 
 - Run the "java -jar Main.jar" command to run the application. You should now see the Main Menu of "CherryBanks".
