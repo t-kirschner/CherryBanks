@@ -5,7 +5,8 @@ import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.Assertions.*
 
 internal class CheckingAccountTest {
-    val a1 = CheckingAccount(50.0)
+    private val a1 = CheckingAccount(50.0)
+    private val c1 = Customer("Max", "Mustermann")
 
     @Test
     fun deposit() {
@@ -17,5 +18,12 @@ internal class CheckingAccountTest {
     fun withdraw() {
         a1.withdraw(40.0)
         assertEquals(10.0, a1.getBalance())
+    }
+
+    @Test
+    fun create() {
+        val a2 = CheckingAccount.create(30.0)
+        c1.addAccount(a2)
+        assertEquals(a2, c1.getAccount(a2.getId()))
     }
 }

@@ -17,7 +17,7 @@ internal class BankTest {
     fun testAddCustomer() {
         assertEquals(true, testBank.isEmpty())
         testBank.addCustomer(c1)
-        assertEquals(c1, testBank.getCustomer(1))
+        assertEquals(c1, testBank.getCustomer(c1.getId()))
     }
 
     @Test
@@ -30,6 +30,7 @@ internal class BankTest {
 
     @Test
     fun testGetCustomer() {
-        assertEquals(null, testBank.getCustomer(1))
+        testBank.addCustomer(c1)
+        assertEquals(c1, testBank.getCustomer(c1.getId()))
     }
 }

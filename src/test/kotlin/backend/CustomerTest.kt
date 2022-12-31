@@ -27,4 +27,10 @@ internal class CustomerTest {
     fun isEmpty() {
         assertEquals(true, c1.isEmpty())
     }
+
+    @Test
+    fun getAccount() {
+        c1.addAccount(a1)
+        assertEquals(a1, c1.getAccount(a1.getId()))
+    }
 }
