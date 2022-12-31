@@ -6,7 +6,7 @@ Project for university lecture. Represents simple bank account system in OOP:
 - data is collected from console input
 - actions are displayed on console output
 
-To run the program you can execute the "Main.jar" (also pushed to this Repository) file on the Java Virtual Machine (JVM):
+To run the program you can execute the "Main.jar" (CherryBanks/src/main/kotlin/Main.jar) file on the Java Virtual Machine (JVM):
 
 - Download and install the Java Development Kit (JDK)
 - Open command line and navigate to the directory where the "Main.jar" file is located
